@@ -1,0 +1,159 @@
+/* 
+-----------------------------------
+Base Structure
+-----------------------------------
+**** GENERAL
+**** HEADER
+**** BODY
+**** FOOTER
+**** EXTRAS
+*/
+
+/* Reference
+g_medal = gold medal
+s_medal = silver medal
+b_medal = bronze medal
+ */
+
+/* GENERAL */
+html, body, header, main, footer, article, div, span, p, a, figure, img, small{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+.line{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.column{}
+
+/* HEADER */
+body > header{
+    background-image: url(../img/bk-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center -137px;
+    padding: 4px 0;
+}
+body > header .line{
+}
+body > header .column{}
+body > header .column img{
+    width: 100%;
+    max-width: 115px;
+}
+body > header .column h1{
+    color: #fff;
+    font-size: 35px;
+    margin-left: 32px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/* BODY */
+body {
+    background-color: #f7f7f7;
+}
+
+/* BOARD*/
+article{
+
+}
+article .container {
+    background-color: #f7f7f7;
+    margin-top: 80px;
+    box-shadow: 0 0 14px -9px #000;
+} 
+/* BOARD HEADER */
+article .container .title{}
+article .container .title .line{
+    padding: -1px 15px;
+}
+article .container .title .line .column{
+    padding: 0 15px;
+}
+article .container .title .line .column span{
+    font-size: 26px;
+    font-weight: bold;
+}
+article .container .title .line .rank{}
+article .container .title .line .rank span{}
+article .container .title .line .country{
+    flex-grow: 2;
+}
+article .container .title .line .country span{}
+article .container .title .line .medal{}
+article .container .title .line .medal span{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 53px;
+    border-radius: 100%;
+    border: 3px solid #fff;
+}
+article .container .title .line #gold{}
+article .container .title .line #gold span{
+    background-color: #f7cc48;
+}
+article .container .title .line #silver{}
+article .container .title .line #silver span{
+    background-color: #d8d6d6;
+}
+article .container .title .line #bronze{}
+article .container .title .line #bronze span{
+    background-color: #b7955e;
+}
+article .container .title .line .total{}
+article .container .title .line .total span{}
+ 
+/* BOARD CONTENT */
+article .container .board{
+    height: 400px;
+    overflow-y: scroll;
+}
+article .container .board .line{
+    padding: 12px 0px;
+}
+article .container .board .line:nth-child(2n+1){
+    background-color: #e6e6e6;
+}
+article .container .board .line .column{
+    font-size: 22px;
+}
+article .container .board .line .rank{
+    flex-basis: 76px;
+    margin-left: 32px;
+}
+article .container .board .line .rank span{}
+article .container .board .line .country{
+    flex-grow: 2;
+}
+article .container .board .line .country img{}
+article .container .board .line .country span{
+    vertical-align: top;
+}
+    
+.g_medal, .s_medal, .b_medal{
+    flex-basis: 88px;
+}
+article .container .board .line .g_medal{}
+article .container .board .line .g_medal span{}
+article .container .board .line .s_medal{}
+article .container .board .line .s_medal span{}
+article .container .board .line .b_medal{}
+article .container .board .line .b_medal span{}
+article .container .board .line .total{
+    flex-basis: 48px;
+}
+article .container .board .line .total span{}
+
+
+/* Falta estilizar o conteudo */
